@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Макет - Світ улюбленців</title>
+    <link rel="stylesheet" href="style-grid-page2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lora:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 data-block="1">Світ улюбленців</h1>
+      </header>
+
+      <aside class="sidebar left" data-block="2">
+        <nav>
+          <h2>Бічний контент Блок 2</h2>
+          <p>
+            📰 У притулку «Дружок» з’явилися нові цуценята, які шукають
+            господарів.
+          </p>
+          <p>
+            💡 Чи знали ви? Далматинці народжуються білими — плями з’являються
+            пізніше.
+          </p>
+          <p>
+            🔗 Корисне посилання:
+            <a
+              href="https://e-zoo.com.ua/ua/blog/razvitie-sshenkov-i-kotyat/5-sovetov-dlya-budusshikh-i-nyneshnikh-vladelcev-sshenkov-kotorye-pomogut-vospitat-prekrasnykh-sobak?srsltid=AfmBOop6JuI_hH_htis8OgERUH0iR5nandg7g34Elo-YfZB7fC1ju-Y9"
+              target="_blank"
+            >
+              10 порад з виховання цуценяти
+            </a>
+          </p>
+        </nav>
+      </aside>
+
+      <div class="main-and-center-content">
+        <main data-block="3">
+          <section class="triangle-checker">
+            <h3>Перевірка можливості побудови трикутника</h3>
+            <form data-triangle-form>
+              <label>
+                Сторона a:
+                <input type="number" name="sideA" min="0" step="any" required />
+              </label>
+              <label>
+                Сторона b:
+                <input type="number" name="sideB" min="0" step="any" required />
+              </label>
+              <label>
+                Сторона c:
+                <input type="number" name="sideC" min="0" step="any" required />
+              </label>
+              <button type="submit">Перевірити</button>
+            </form>
+          </section>
+          <h2>📘 Поради з догляду (Блок 3 - Верхня частина)</h2>
+          <h3>Основні рекомендації</h3>
+          <p>
+            Правильний догляд за домашніми улюбленцями — запорука їхнього
+            здоров’я і щастя.
+          </p>
+          <img
+            src="https://i.pinimg.com/736x/c9/0b/e8/c90be8ed3bf150518df503bb145ebfb6.jpg"
+            alt="Зображення-заповнювач"
+            class="responsive-img"
+          />
+          <section class="block-editor-section" data-block-list>
+            <h3>Редагування тексту контейнерів</h3>
+            <p>
+              Двічі клікніть по пункту списку, щоб відкрити форму редагування у відповідному блоці.
+            </p>
+            <ol class="block-editor-list">
+              <li data-target-block="1">Блок 1</li>
+              <li data-target-block="2">Блок 2</li>
+              <li data-target-block="3">Блок 3</li>
+              <li data-target-block="4">Блок 4</li>
+              <li data-target-block="5">Блок 5</li>
+              <li data-target-block="6">Блок 6</li>
+            </ol>
+          </section>
+        </main>
+
+        <div class="bottom-info" data-block="5">
+          <h2>Інформація (Блок 5 - Нижня частина)</h2>
+          <p>
+            Маєте запитання, хочете поділитися історією або фото свого
+            улюбленця? Ми завжди відкриті до спілкування!
+          </p>
+        </div>
+      </div>
+
+      <aside class="sidebar right" data-block="4">
+        <h2>Меню Блок 4</h2>
+        <form class="uppercase-toggle-form">
+          <label>
+            <input type="checkbox" data-uppercase-toggle />
+            Робити перші літери слів великими
+          </label>
+        </form>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="index-grid-page2.html">Поради з догляду</a></li>
+          <li><a href="index-traditional-page3.html">Фотоальбом</a></li>
+        </ul>
+      </aside>
+
+      <footer>
+        <h3 data-block="6">Блок 6: Футер</h3>
+        <p>📧 Email: petsworld@example.com</p>
+        <p>📱 Телефон: +380 99 123 45 67</p>
+      </footer>
+    </div>
+    <script src="swap-block-content.js" defer></script>
+    <script src="pentagon-area.js" defer></script>
+    <script src="triangle-checker.js" defer></script>
+    <script src="block4-uppercase.js" defer></script>
+    <script src="container-text-editor.js" defer></script>
+    <script src="index.js" defer></script>
+  </body>
+</html>
